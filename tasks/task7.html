@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home Work</title>
+</head>
+
+<body>
+	<h2>Задача 7</h2>
+	<h3>Умова задачі</h3>
+	<p>
+		Дано масив цін. Змінити цей масив так, що на ціни товарів, які більші за 1000 грн. дати 30% знижки.
+	</p>
+
+	<h3>Розв'язок</h3>
+	<script>
+
+		userNumberElements = parseInt(prompt('Введіть число від 1 до 20'))
+
+		let priceList = new Array(userNumberElements)
+
+		for (let i = 0; i < priceList.length; i++) {
+			const minNumber = 10
+			const maxNumber = 2000
+			const randomPrises = minNumber + Math.floor(Math.random() * (maxNumber - minNumber + 1))
+			priceList[i] = randomPrises
+		}
+		document.write(`${priceList}<br>`)
+
+		const minSumToDiscount = 1000
+
+		priceList.forEach(
+			(elem, index, arr) => {
+				if (elem > minSumToDiscount) arr[index] = arr[index] - (arr[index] * 0.3)
+			}
+		)
+		document.write(priceList)
+
+
+	</script>
+	<style>
+		h2 {
+			color: #08368b;
+		}
+
+		h3 {
+			color: #06700f;
+		}
+	</style>
+</body>
+
+</html>

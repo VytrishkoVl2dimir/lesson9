@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home Work</title>
+</head>
+
+<body>
+	<h2>Задача 9</h2>
+	<h3>Умова задачі</h3>
+	<p>
+		Дано масив імен. Сформувати масив з перших літер цих імен.
+	</p>
+
+	<h3>Розв'язок</h3>
+	<script>
+
+		const usersName = ['Уляна', 'Кирило', 'Роман', 'Андрій', 'Ївга', 'Надія', 'Антін']
+		document.write(`${usersName}<br>`)
+
+		const arrayFirstLetters = usersName.map(
+			(elem, index, arr) => elem = arr[index][0]
+		)
+		document.write(arrayFirstLetters)
+
+	</script>
+	<style>
+		h2 {
+			color: #08368b;
+		}
+
+		h3 {
+			color: #06700f;
+		}
+	</style>
+</body>
+
+</html>

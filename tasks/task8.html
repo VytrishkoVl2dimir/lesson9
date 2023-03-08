@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home Work</title>
+</head>
+
+<body>
+	<h2>Задача 8</h2>
+	<h3>Умова задачі</h3>
+	<p>
+		Дано масив номерів авто. Сформувати новий масив тих, які починаються на «А»
+	</p>
+
+	<h3>Розв'язок</h3>
+
+	<script>
+
+		const autoNumber = ['АХ3654НА', 'АА12А', '63686ХК', 'К1322ХК', 'КХ4586МК', 'АК1824МН']
+		document.write(`${autoNumber}<br>`)
+
+		const autoNumberWithFirst_A = autoNumber.filter(
+			(elem, index, arr) => arr[index][0] === 'А'
+		)
+		document.write(autoNumberWithFirst_A)
+
+	</script>
+	<style>
+		h2 {
+			color: #08368b;
+		}
+
+		h3 {
+			color: #06700f;
+		}
+
+		h4 {
+			color: #19058a;
+			font-size: 50px;
+			text-decoration: underline;
+		}
+
+		.link:hover {
+			transition: transform 0.8s ease 0s;
+			transform: translate(2px, -2px);
+		}
+	</style>
+</body>
+
+</html>
